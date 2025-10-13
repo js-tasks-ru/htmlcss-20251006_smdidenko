@@ -1,0 +1,7 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  background-color: #04a242;
+  padding: 20px;
+  gap: 20px;
+}
