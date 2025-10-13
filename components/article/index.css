@@ -1,0 +1,7 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: #1319ff;
+  padding: 10px;
+  color: white;
+}
