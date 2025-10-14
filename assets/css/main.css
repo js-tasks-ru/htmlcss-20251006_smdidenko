@@ -10,8 +10,11 @@
   --white: #ffffff;
   --black: #212429;
   --pink: #f784ad;
-  --purple: #7048e8;
+  --purple-1: #7048e8;
+  --purple-2: #5028c6;
   --blue: #374fc7;
+  --blue-1: #4263eb;
+  --blue-2: #2342c0;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -23,8 +26,16 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --primary-color: var(--blue-1);
+  --primary-hover: var(--blue-2);
+  --secondary-color: var(--purple-1);
+  --secondary-hover: var(--purple-2);
 }
 
 * {
   font-family: 'Inter', sans-serif;
+  --font-weight: 500;
+  --font-size: 16px;
+  --line-height: 100%;
 }
