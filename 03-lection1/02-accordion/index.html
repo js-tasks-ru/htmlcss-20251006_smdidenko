@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+  </head>
+  <body>
+    <details class="accordion">
+      <summary class="accordion__summary">
+        <span>Селекторы классов</span>
+        <img
+          src="../../assets/images/Vector.svg"
+          alt=""
+          class="accordion__icon"
+        />
+      </summary>
+      <p>
+        Позволяют указать конкретный HTML-элемент страницы, независимо от тега.
+        Обращение к селектору класса происходит через атрибут class, который
+        должен иметь каждый HTML-элемент. Значением атрибута class может быть
+        разделенный пробелами список слов. Это позволяет использовать разные
+        БЭМ-сущности на одном DOM-узле.
+      </p>
+    </details>
+    <details class="accordion">
+      <summary class="accordion__summary">
+        Совмещение тега и класса в селекторе
+        <img
+          src="../../assets/images/Vector.svg"
+          alt=""
+          class="accordion__icon"
+        />
+      </summary>
+      <p>
+        Методология БЭМ не рекомендует совмещать теги и классы в селекторе.
+        Объединение тега и класса (например, button.button) повышает
+        специфичность CSS-правил, что усложняет задачу их переопределения. Это
+        приводит к войнам значимости, при которых таблицы стилей загружаются
+        излишне сложными селекторами.
+      </p>
+    </details>
+    <details class="accordion">
+      <summary class="accordion__summary">
+        Вложенные селекторы
+        <img
+          src="../../assets/images/Vector.svg"
+          alt=""
+          class="accordion__icon"
+        />
+      </summary>
+      <p>
+        Методология БЭМ допускает использование вложенных селекторов, но
+        рекомендует свести их применение к минимуму. Вложенные селекторы
+        увеличивают связность кода и делают его повторное использование
+        невозможным. При использовании вложенных селекторов важно соблюдать
+        принцип инкапсуляции: правила одного блока не должны влиять на
+        внутренний мир другого блока. Элементы — это внутренняя реализация
+        блока. Таким образом, блок влияет только на свои элементы и не может
+        воздействовать на элементы другого блока.
+      </p>
+    </details>
+  </body>
 </html>
