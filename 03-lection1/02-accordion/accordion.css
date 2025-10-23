@@ -1,4 +1,4 @@
-.accordion__main {
+.accordion {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -8,6 +8,7 @@
   border: 1px solid var(--grey-3);
   cursor: pointer;
   padding: 1.5rem 2rem;
+  font: 400 16px/24px 'Inter', sans-serif;
 }
 
 .accordion__summary {
@@ -17,31 +18,14 @@
   list-style: none;
 }
 
-.accordion__content {
-  margin-top: 1rem;
-}
-
-.accordion__summary,
-.accordion__content {
-  font: 400 16px/24px 'Inter', sans-serif;
-}
-
 .accordion__section[open] {
   padding: 1.5rem 2rem 2rem 2rem;
 }
 
-.accordion__section[open] .accordion__icon {
-  transform: rotate(0deg);
+.accordion__section[open] .accordion__summary {
+  margin-bottom: 1rem;
 }
 
-.accordion__summary:last-child {
-  margin-bottom: 0px;
-}
 .accordion__summary::-webkit-details-marker {
   display: none;
-}
-
-.accordion__icon {
-  transition: transform 0.3s ease;
-  transform: rotate(180deg);
 }
