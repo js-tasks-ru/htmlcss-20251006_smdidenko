@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.histogram-header {
+.histogram__header {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
