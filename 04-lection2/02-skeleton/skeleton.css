@@ -4,7 +4,7 @@
   gap: 1.5rem;
   border-radius: 8px;
   border: 1px solid var(--grey-3);
-  padding: 2rem 2.5rem 2rem 1.5rem;
+  padding: 1.5rem 2.5rem 2rem 1.5rem;
 }
 
 .skeleton__top {
@@ -31,6 +31,7 @@
 .skeleton__description {
   display: flex;
   flex-direction: column;
+  align-self: center;
   width: 100%;
   gap: 0.5rem;
   flex: 1;
@@ -58,12 +59,4 @@
 
 .skeleton__line_w90 {
   width: 90%;
-}
-
-.skeleton__line_mt {
-  margin-top: 0.5rem;
-}
-
-.skeleton__line_mb {
-  margin-bottom: 0.5rem;
 }
