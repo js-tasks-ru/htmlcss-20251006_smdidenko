@@ -19,8 +19,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 100%;
-  height: 100%;
 }
 
 .skeleton__photo {
@@ -38,7 +36,7 @@
   flex: 1;
 }
 
-.skeleton__description_el {
+.skeleton__line {
   height: 1.25rem;
   background: linear-gradient(
     92.51deg,
@@ -48,4 +46,24 @@
     #e3e7ea 77.5%,
     #dde2e5 102.52%
   );
+}
+
+.skeleton__line_w40 {
+  width: 40%;
+}
+
+.skeleton__line_w60 {
+  width: 60%;
+}
+
+.skeleton__line_w90 {
+  width: 90%;
+}
+
+.skeleton__line_mt {
+  margin-top: 0.5rem;
+}
+
+.skeleton__line_mb {
+  margin-bottom: 0.5rem;
 }
